@@ -28,12 +28,12 @@ default['haproxy']['members'] = [{
   "hostname" => "app1",
   "ipaddress" => "192.168.100.30",
   "port" => 80,
-  "ssl_port" => 80
+  "ssl_port" => 443
 }, {
   "hostname" => "app2",
   "ipaddress" => "192.168.100.31",
   "port" => 80,
-  "ssl_port" => 80
+  "ssl_port" => 443
 }]
 default['haproxy']['member_port'] = 8080
 default['haproxy']['member_weight'] = 1
